@@ -38,6 +38,8 @@ services:
       - elk
     depends_on:
       - elasticsearch
+    environment:
+      VIRTUAL_HOST: kibana.epic
 
 networks:
 
